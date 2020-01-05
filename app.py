@@ -41,13 +41,13 @@ def handle_message(event):
     r = '很抱歉,我看不懂你說什麼'
 
     if msg in ['hi', 'Hi']:
-        r == '嗨'
+        r = '嗨'
     elif msg == '你吃飯了嗎':
-        r == '吃了'
+        r = '吃了'
     elif msg == '你是誰':
-        r == '我是機器人'
+        r = '我是機器人'
     elif '訂位' in msg:
-        r == '你想訂位是嗎?'
+        r = '你想訂位是嗎?'
 
     line_bot_api.reply_message(
         event.reply_token,
